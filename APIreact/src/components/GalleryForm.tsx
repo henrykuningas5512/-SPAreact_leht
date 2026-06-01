@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Artwork } from "../types/Artwork";
+import type { Artwork } from "../types/Artwork";
 
 interface Props {
   onAdd: (artwork: Artwork) => void;
@@ -34,7 +34,7 @@ export default function GalleryForm({ onAdd }: Props) {
 
   return (
     <form style={{ marginBottom: "20px" }}>
-      <h2>Lisa kunstiteos</h2>
+      <h2 className="form-title">Lisa kunstiteos</h2>
 
       <input
         placeholder="Pealkiri"
