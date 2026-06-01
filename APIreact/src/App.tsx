@@ -122,12 +122,12 @@ function App() {
         <div className="gallery">
           {filteredArtworks.map((art) => (
             <GalleryCard
-            key={art.id}
-            artwork={art}
-            onDelete={deleteArtwork}
-            onToggleFavorite={toggleFavorite}
-            onEdit={editArtwork}
-          />
+              key={art.id}
+              artwork={art}
+              onDelete={deleteArtwork}
+              onToggleFavorite={toggleFavorite}
+              onEdit={editArtwork}
+            />
           ))}
         </div>
       )}
